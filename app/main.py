@@ -14,13 +14,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 STATIC_DIR = os.path.join(BASE_DIR, "static")
 
-print("==== DEBUG INFO ====")
-print("Current working directory:", os.getcwd())
-print("File absolute path:", os.path.abspath(__file__))
-print("Base directory:", BASE_DIR)
-print("Template folder path:", TEMPLATES_DIR)
-print("Templates actually found:", os.listdir(TEMPLATES_DIR))
-print("=====================")
 
 app = Flask(
     __name__,
